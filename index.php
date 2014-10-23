@@ -13,13 +13,14 @@ function get_banned_ips_arsha(){
     $checkemptylist = get_option('banned_ips_arsha');
     if(empty($checkemptylist)){
         $default_banned = get_banned_list_ips();
-        $banned_list_urls = get_banned_list_urls();
-        update_option('banned_urls_arsha','$banned_list_urls');
+        $banned_urls_arsha = get_banned_list_urls();
+        update_option('banned_urls_arsha',$banned_urls_arsha);
         update_option('banned_ips_arsha', $default_banned);
     }
     if(checkupdatebannedlist()){
         $default_banned = get_banned_list_ips();
-        $banned_urls_arsha = 
+        $banned_urls_arsha = get_banned_list_urls();
+        update_option('banned_urls_arsha',$banned_urls_arsha);
         update_option('banned_ips_arsha', $default_banned);
     }
 }
@@ -46,7 +47,7 @@ function checkurls_arsha(){
     $itemcheck = $_SERVER['HTTP_REFERER'];
     foreach ($banned_list_urls as $banned_list_url) {
         if(strpos($itemcheck, $banned_list_url)){
-            die(get_option('ban_message_arsha'));
+            die('You are banned!');
         }
     }
 }
@@ -54,7 +55,7 @@ function checkips_arsha(){
     $banned_ips_arsha = get_option('banned_ips_arsha');
     $itemcheck = $_SERVER['REMOTE_ADDR'];
     if(in_array($itemcheck, $banned_ips_arsha)){
-        die(get_option('ban_message_arsha'));
+        die('You are banned!');
     }
 }
 function grab_arsha($url) {
