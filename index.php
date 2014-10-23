@@ -4,6 +4,7 @@
  *Description: iframecatcher ban the spam feedreader sites.
  *Version:1.0
  *Author: Alireza Pagheh
+ *Author URI: http://forum.persiantools.com/members/alireza567.241530/
 */
 add_action('init', 'checkurls_arsha');
 add_action('init', 'checkips_arsha');
