@@ -1,7 +1,7 @@
 <?php
 /*
- *Plugin Name: IframeCatcher
- *Description: IframeCatcher ban the spam feedreader sites.
+ *Plugin Name: iframecatcher
+ *Description: iframecatcher ban the spam feedreader sites.
  *Version:1.0
  *Author: Alireza Pagheh
 */
