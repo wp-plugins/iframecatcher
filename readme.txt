@@ -15,14 +15,9 @@ iframecatcher ban the spam feedreader sites.
 iframecatcher ban the iranian spam site.
 and this plugin ban the spam feedreader sites.
 Good bye spam sites!
-iframecatcher call to kamalak2000.tk for update the list of banned sites(ips).
 == Installation ==
 
 1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Frequently asked questions ==
-
-= why this plugin call to kamalak2000.tk? =
-
-iframecatcher call to kamalak2000.tk for update the list of banned sites(ips).
